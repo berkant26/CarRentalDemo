@@ -10,6 +10,6 @@ namespace DataAccess.Concrete.EntityFramework
 {
   public  class EfRentalDal:EfEntityRepositoryBase<Rental,NorthwindContext>,IRentalDal
     {
-
+        
     }
 }

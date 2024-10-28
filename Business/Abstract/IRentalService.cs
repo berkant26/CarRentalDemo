@@ -8,8 +8,9 @@ namespace Business.Abstract
 {
    public interface IRentalService
     {
-        IResult Add(Rental renral);
-        
-
+        IResult Add(Rental rental);
+        bool CheckCarIsAvailable(int carId);
+        IResult Return(int carId);
+        IDataResult<List<Rental>> GetAll();
     }
 }

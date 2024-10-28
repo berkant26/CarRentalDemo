@@ -28,7 +28,6 @@ namespace WebAPI.Controllers
         [HttpGet("getall")]
         public IActionResult GetList()
         {
-            Console.WriteLine("asdasdsadsa");
             var result = _carServivce.GetAll(null);
             return Ok(result);
         }

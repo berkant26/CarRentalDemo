@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Folder Include="Aspects\Autofac\can add more aspect\" />
+    <Folder Include="Utilities\NewFolder\" />
   </ItemGroup>
 
 </Project>

@@ -46,7 +46,7 @@ namespace Business.Concrete
             return new SuccessResult("succes");
         }
         //[PerformanceAspect(5)]
-        [SecuredOperation("car.list")]
+       // [SecuredOperation("car.list")]
 
         public IDataResult<List<Car>> GetAll(Expression<Func<Car, bool>> filter)
         {
