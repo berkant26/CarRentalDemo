@@ -38,6 +38,7 @@ namespace WebAPI
         {
             services.AddControllers();
             services.AddSwaggerDocument();
+
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

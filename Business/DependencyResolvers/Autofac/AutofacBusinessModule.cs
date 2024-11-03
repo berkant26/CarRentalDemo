@@ -11,6 +11,8 @@ using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Core.Utilities.Security.Jwt;
 using DataAccess.Concrete;
+using Nest;
+using Entities.Concrete;
 
 namespace Business.DependencyResolvers.Autofac
 {
@@ -18,6 +20,7 @@ namespace Business.DependencyResolvers.Autofac
     {
         protected override void Load(ContainerBuilder builder)
         {
+            
             builder.RegisterType<CarManager>().As<ICarService>();
             builder.RegisterType<EfCarDal>().As<ICarDal>();
             builder.RegisterType<JwtHelper>().As<ITokenHelper>();
@@ -26,7 +29,7 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<EfUserDal>().As<IUserDal>();
             builder.RegisterType<RentalMenager>().As<IRentalService>();
             builder.RegisterType<EfRentalDal>().As<IRentalDal>();
-
+           
 
 
 
